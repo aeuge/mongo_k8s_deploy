@@ -2,8 +2,8 @@
 export LANG=C
 export LC_CTYPE=C
 export EPASS=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
-export ECOLLECTION=EXNESS_$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 4 | head -n 1)
-kubectl create namespace otus-mongodb
+export ECOLLECTION=OTUS_$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 4 | head -n 1)
+kubectl create namespace otus-mongodb --dry-run=client -o yaml | kubectl apply -f -
 helm repo add bitnami https://charts.bitnami.com/bitnami
 envsubst <  my_values.yaml | helm  install --wait  --timeout 120s --create-namespace otus-mongodb bitnami/mongodb -f -
 echo
