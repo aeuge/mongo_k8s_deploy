@@ -19,6 +19,6 @@ echo
 echo
 kubectl run --namespace wb-mongodb wb-mongodb-client --rm --tty -i \
 --restart='Never' --image docker.io/bitnami/mongodb:8.0.13-debian-12-r0 \
---command -- mongo test-database \
+--command -- mongosh test-database \
 --host "wb-mongodb-0.wb-mongodb-headless.wb-mongodb.svc.cluster.local,wb-mongodb-1.wb-mongodb-headless.wb-mongodb.svc.cluster.local,wb-mongodb-2.wb-mongodb-headless.wb-mongodb.svc.cluster.local," \
 --authenticationDatabase test-database -u test-user -p $EPASS --eval 'db.getCollectionNames()'
