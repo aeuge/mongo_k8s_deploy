@@ -1,5 +1,5 @@
 global:
-  namespaceOverride: otus-mongodb
+  namespaceOverride: wb-mongodb
 
 image:
   registry: docker.io
@@ -14,7 +14,7 @@ auth:
   enabled: true
   rootPassword: ""
   replicaSetKey: replicaSetkey
-replicaSetName: otustest
+replicaSetName: wbtest
 replicaSetHostnames: true
 initdbScripts:
   my_init_script.js: |

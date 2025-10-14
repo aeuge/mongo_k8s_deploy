@@ -77,7 +77,7 @@ auth:
   ## ref: https://github.com/bitnami/bitnami-docker-mongodb/blob/master/README.md#creating-a-user-and-database-on-first-run
   ##
   #username: testuser
-  #password: otus
+  #password: wb
   #database: testdb
   ## Key used for replica set authentication
   ## Ignored when mongodb.architecture=standalone
@@ -92,7 +92,7 @@ auth:
 ## Name of the replica set
 ## Ignored when mongodb.architecture=standalone
 ##
-replicaSetName: otustest
+replicaSetName: wbtest
 
 ## Enable DNS hostnames in the replica set config
 ## Ignored when mongodb.architecture=standalone

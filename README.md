@@ -46,30 +46,30 @@ process_resident_memory_bytes 2.492416e+07
 
 # HELP mongodb_mongod_replset_member_health This field conveys if the member is up (1) or down (0).
 # TYPE mongodb_mongod_replset_member_health gauge
-mongodb_mongod_replset_member_health{name="otus-mongodb-0.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="PRIMARY"} 1
-mongodb_mongod_replset_member_health{name="otus-mongodb-1.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1
-mongodb_mongod_replset_member_health{name="otus-mongodb-2.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1
+mongodb_mongod_replset_member_health{name="wb-mongodb-0.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="PRIMARY"} 1
+mongodb_mongod_replset_member_health{name="wb-mongodb-1.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1
+mongodb_mongod_replset_member_health{name="wb-mongodb-2.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1
 
 # HELP mongodb_mongod_replset_member_operational_lag The operationl lag - or staleness of the oplog timestamp - for this member.
 # TYPE mongodb_mongod_replset_member_operational_lag gauge
-mongodb_mongod_replset_member_operational_lag{name="otus-mongodb-1.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1
-mongodb_mongod_replset_member_operational_lag{name="otus-mongodb-2.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1
+mongodb_mongod_replset_member_operational_lag{name="wb-mongodb-1.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1
+mongodb_mongod_replset_member_operational_lag{name="wb-mongodb-2.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1
 
 # HELP mongodb_mongod_replset_member_replication_lag The replication lag that this member has with the primary.
 # TYPE mongodb_mongod_replset_member_replication_lag gauge
-mongodb_mongod_replset_member_replication_lag{name="otus-mongodb-1.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 0
-mongodb_mongod_replset_member_replication_lag{name="otus-mongodb-2.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 0
+mongodb_mongod_replset_member_replication_lag{name="wb-mongodb-1.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 0
+mongodb_mongod_replset_member_replication_lag{name="wb-mongodb-2.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 0
 
 
 
 # HELP mongodb_mongod_replset_member_last_heartbeat The lastHeartbeat value provides an ISODate formatted date and time of the transmission time of last heartbeat received from this member
 # TYPE mongodb_mongod_replset_member_last_heartbeat gauge
-mongodb_mongod_replset_member_last_heartbeat{name="otus-mongodb-0.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="PRIMARY"} 1.599730925e+09
-mongodb_mongod_replset_member_last_heartbeat{name="otus-mongodb-1.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1.599730925e+09
+mongodb_mongod_replset_member_last_heartbeat{name="wb-mongodb-0.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="PRIMARY"} 1.599730925e+09
+mongodb_mongod_replset_member_last_heartbeat{name="wb-mongodb-1.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1.599730925e+09
 # HELP mongodb_mongod_replset_member_last_heartbeat_recv The lastHeartbeatRecv value provides an ISODate formatted date and time that the last heartbeat was received from this member
 # TYPE mongodb_mongod_replset_member_last_heartbeat_recv gauge
-mongodb_mongod_replset_member_last_heartbeat_recv{name="otus-mongodb-0.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="PRIMARY"} 1.599730925e+09
-mongodb_mongod_replset_member_last_heartbeat_recv{name="otus-mongodb-1.otus-mongodb-headless.mongodb.svc.cluster.local:27017",set="otustest",state="SECONDARY"} 1.599730925e+09
+mongodb_mongod_replset_member_last_heartbeat_recv{name="wb-mongodb-0.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="PRIMARY"} 1.599730925e+09
+mongodb_mongod_replset_member_last_heartbeat_recv{name="wb-mongodb-1.wb-mongodb-headless.mongodb.svc.cluster.local:27017",set="wbtest",state="SECONDARY"} 1.599730925e+09
 
 # HELP mongodb_mongod_op_latencies_latency_total op latencies statistics in microseconds of mongod
 # TYPE mongodb_mongod_op_latencies_latency_total gauge
