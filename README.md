@@ -1,5 +1,7 @@
 # Task
 
+updated to mongo 8.21.0
+
 1. Provide a solution code and setup CI/CD pipeline that will automatically:
 
     1.1. Setup a production-like three-Node MongoDB Cluster in Kubernetes. Assume Kubernetes cluster already in place.
